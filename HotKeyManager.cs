@@ -42,7 +42,7 @@ namespace ScreenshotApp
             private static void CaptureScreen()
             {
                 var captureForm = CaptureForm.GetInstance();
-                if (!captureForm.Visible)  // Проверяем, не отображается ли форма уже
+                if (!captureForm.Visible)
                 {
                     captureForm.ShowDialog();
                 }

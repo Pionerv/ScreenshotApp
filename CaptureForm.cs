@@ -60,8 +60,6 @@ namespace ScreenshotApp
             this.Location = screen.Bounds.Location;
             this.Size = screen.Bounds.Size;
             this.TopMost = false;
-            this.BackColor = Color.Black;
-            this.TransparencyKey = Color.Black;
             this.Opacity = 1;
         }
 

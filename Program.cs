@@ -13,10 +13,12 @@ namespace ScreenshotApp
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            NotifyIcon trayIcon = new();
-            trayIcon.Icon = SystemIcons.Application;
-            trayIcon.Visible = true;
-            trayIcon.Text = "ScreenshotApp";
+            NotifyIcon trayIcon = new()
+            {
+                Icon = SystemIcons.Application,
+                Visible = true,
+                Text = "ScreenshotApp"
+            };
 
             ContextMenuStrip contextMenu = new();
             contextMenu.Items.Add("Exit", null, (sender, e) => Application.Exit());
